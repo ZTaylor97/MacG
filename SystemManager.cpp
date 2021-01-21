@@ -19,7 +19,11 @@ namespace MacG
 	}
 	void SystemManager::ClearSystems()
 	{
-		//TODO
+		for (auto& system : Systems)
+		{
+			system.second->Clear();
+		}
+		Systems.clear();
 	}
 
 	std::vector<System*> SystemManager::GetSystems()

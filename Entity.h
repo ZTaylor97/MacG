@@ -34,7 +34,6 @@ namespace MacG
             newComponent->owner = this;
             components.emplace_back(newComponent);
             componentTypeMap[&typeid(*newComponent)] = newComponent;
-            newComponent->Initialize();
             return *newComponent;
         }
 

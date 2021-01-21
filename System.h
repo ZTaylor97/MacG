@@ -11,6 +11,11 @@ namespace MacG
 		virtual void Initialise() {}
 		virtual void Update(float deltaTime) {}
 		virtual void Render() {}
+		virtual void Clear() 
+		{
+			targetEntities.clear();
+		}
+
 	};
 }
 
