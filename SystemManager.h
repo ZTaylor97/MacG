@@ -9,6 +9,7 @@ namespace MacG
 	private:
 		std::map<const std::type_info*, System*> Systems;
 	public:
+		void Initialise();
 		void Update(float deltaTime);
 		void Render();
 		void ClearSystems();

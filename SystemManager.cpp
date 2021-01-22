@@ -2,6 +2,13 @@
 
 namespace MacG
 {
+	void SystemManager::Initialise()
+	{
+		for (auto& system : Systems)
+		{
+			system.second->Initialise();
+		}
+	}
 	void SystemManager::Update(float deltaTime)
 	{
 		for (auto& system : Systems)

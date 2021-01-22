@@ -11,7 +11,6 @@ namespace MacG
 	{
 	public:
 		Entity* owner;
-		virtual void Initialise() {}
 		virtual void Update(float deltaTime) {}
 	};
 }
