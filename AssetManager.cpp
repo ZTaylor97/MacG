@@ -52,6 +52,10 @@ namespace MacG
 		}
 		SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
 		SDL_FreeSurface(surface);
+
+		std::cout << SDL_GetError() << std::endl;
+
+		textures.emplace(textureId, texture);
 		return texture;
 	}
 }

@@ -5,3 +5,4 @@
 #include "EntityManager.h"
 #include "System.h"
 #include "SystemManager.h"
+#include "AssetManager.h"

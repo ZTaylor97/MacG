@@ -8,7 +8,7 @@ namespace MacG
 		
 	public:
 		std::vector<Entity*> targetEntities;
-		virtual void UpdateEntityList(std::vector<Entity*> entities) {}
+		virtual void UpdateEntityList(std::map<std::string, MacG::Entity*> entities) {}
 		virtual void Initialise() {}
 		virtual void Update(float deltaTime) {}
 		virtual void Render() {}
